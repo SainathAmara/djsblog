@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{%load static%}
+{%load testapp_tags%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{%block title_block%}{%endblock%}</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel='stylesheet' href="{%static 'css/blog.css' %}">
+  </head>
+  <body>
+    <nav class='navbar navbar-default navbar-inverse'>
+      <div class='navbar-header'>
+        <a class='navbar-brand'href='#'>SAI'S BLOG</a>
+      </div>
+      <ul class='nav navbar-nav'>
+        <li><a href='#'>My Gallery</a>
+      </ul>
+      <ul class='nav navbar-nav navbar-right'>
+        <li><a href='/logout'>Logout</a></li>
+      </ul>
+    </nav>
+     <div class='content'>
+       {%block content_block%}
+       {%endblock%}
+      </div>
+      <div class='sidebar'>
+        <h2>Sai's Blog</h2>
+        <p>The total number of posts published upto today:<span>{%total_posts%}</span></P>
+        <h2>Latest posts</h2>{%show_latest_posts%}
+        <h2>Most Commented Posts</h2>{%get_most_commented_posts%}
+    </div>
+  </body>
+</html>

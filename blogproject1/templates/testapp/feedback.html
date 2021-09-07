@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet'href="{%static 'css/fd.css' %}">
+  </head>
+  <body bgcolor='yellow'>
+    <div class='container'align='center'>
+      <h1>Feedback Form</h1>&ensp;&ensp;&ensp;
+      <form method='POST'>
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type='submit' class='btn btn-primary' value='submit feedback'>
+      </form>
+    </div>
+  </body>
+</html>

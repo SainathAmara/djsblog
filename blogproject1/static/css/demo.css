@@ -1,0 +1,37 @@
+img{
+  width:30%;
+  height:200px;
+  margin:1.5%;
+  float:left;
+  border:2px solid green;
+}
+.container{
+  margin-top:200px;
+}
+.jumbotron{
+  background:red;
+  color:white;
+}
+.jumbotron a{
+  background:yellow;
+  color:red;
+  border:2px solid green;
+}
+h1{
+  color:white;
+  background:red;
+}
+table,thead,th,tr,td{
+  color:yellow;
+  border:2px solid white;
+  font-size:20px;
+  margin:auto;
+  background:red;
+}
+thead, th{
+  color:white;
+  border:2px solid white;
+  font-size:20px;
+  margin:auto;
+  background:blue;
+}

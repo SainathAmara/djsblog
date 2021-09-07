@@ -1,0 +1,47 @@
+.content{
+  width:60%;
+  float:left;
+  background:red;
+  padding-left:30px;
+}
+.sidebar{
+  width:40%;
+  float:left;
+  background:green;
+  height:100%;
+}
+body{
+  background:red;
+  color:white;
+}
+h1{
+  text-align:center;
+  border-bottom:1px solid yellow;
+  padding-bottom:10px;
+}
+#date{
+  color:yellow;
+  font-size:17px;
+  font-style:Italic;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+
+.jumbotron{
+  margin-top:200px;
+  background:white;
+  color:green;
+}
+.h{
+  color:green;
+}
+#a1{
+  text-align:center;
+}
+span{
+  font-size:40px;
+  font-color:yellow;
+  font-weight:bold;
+}
